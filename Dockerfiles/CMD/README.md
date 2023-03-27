@@ -1,6 +1,7 @@
 ### CMD
 
-CMD is the instruction that runs time of running contiainer.
+* CMD is the instruction that runs time of running contiainer.
+* It should run in foreground and it should run for infinite time.
 
 ### RUN vs CMD
 
