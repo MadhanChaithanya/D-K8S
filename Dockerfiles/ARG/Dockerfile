@@ -6,8 +6,14 @@
 
 # RUN echo "$VERSION"
 
+# ARG VERSION
+# FROM almalinux
+# ARG GREETING
+# RUN echo "$VERSION"
+# RUN echo "$GREETING"
+
 ARG VERSION
 FROM almalinux
-ARG GREETING
+ARG GREETING="Hello Good Afternoon"
 RUN echo "$VERSION"
 RUN echo "$GREETING"
