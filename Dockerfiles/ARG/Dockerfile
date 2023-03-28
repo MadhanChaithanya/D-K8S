@@ -12,8 +12,16 @@
 # RUN echo "$VERSION"
 # RUN echo "$GREETING"
 
+# ARG VERSION
+# FROM almalinux
+# ARG GREETING="Hello Good Afternoon"
+# RUN echo "$VERSION"
+# RUN echo "$GREETING"
+
+
 ARG VERSION
 FROM almalinux
 ARG GREETING="Hello Good Afternoon"
+ENV GREET=${GREETING}
 RUN echo "$VERSION"
 RUN echo "$GREETING"
