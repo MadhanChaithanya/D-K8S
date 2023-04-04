@@ -16,3 +16,10 @@ docker run -d -v nginx:
 -v host-path:container-path
 
 docker run -d -v nginx:/usr/share/nginx/html -p 80:80 nginx
+
+
+inside host you will have a directory for volume .
+
+This directory can be mounted with any path inside the container.
+
+/var/lib/docker/volumes/nginx/_data:/usr/share/nginx/html
